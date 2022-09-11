@@ -61,7 +61,7 @@ public class PlayerController : MonoBehaviour
     {
     	if(GameManager.sharedInstance.currentGameState == GameState.inGame)   	//Solo podemos saltar si estamos en una partida.
     	{
-        if(Input.GetKeyDown(KeyCode.Space)||Input.GetMouseButtonDown(0))	//Si se presiona Espacio o Clic Izquierdo...
+        if(Input.GetMouseButtonDown(0))	//Si se presiona Espacio o Clic Izquierdo...
         {
         	Jump(false);																//... entonces saltamos
         }
